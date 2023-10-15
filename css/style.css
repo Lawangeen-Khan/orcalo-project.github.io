@@ -9,6 +9,9 @@
     --primary: #DB1960;
     --secondary: #F9F1E5;
     --ternary: #726c6c;
+    --footer-color: #1d1818;
+    --form-color: #2b2525;
+    --client-back-color: #f3f0f0;
 }
 
 
@@ -16,14 +19,38 @@
 .background-primary{
     background-color: var(--primary);
 }
+.background-footer-color{
+    background-color: var(--footer-color);
+}
+.background-client-back-color{
+    background-color: var(--client-back-color);
+}
 .color-primary{
     color: var(--primary);
+}
+.color-secondary{
+    color: var(--secondary);
 }
 .color-ternary{
     color: var(--ternary);
 }
 .padding-right-2{
     padding-right: 2rem;
+}
+.font-weight-800{
+    font-weight: 800;
+}
+.margin-top-9{
+    margin-top: 9rem;
+}
+.margin-top-4{
+    margin-top: 4.3rem;
+}
+.padding-top-6{
+    padding-top: 6rem;
+}
+p{
+    color: var(--ternary);
 }
 
 .linka{
@@ -52,13 +79,23 @@
     color: var(--primary);
     border: 1px solid var(--primary);
 }
+.sec-heading{
+    text-transform: capitalize;
+    font-size: 43px;
+    font-weight: 800;
+    text-transform: lowercase;
+    line-height: 55px;
+}
+.sec-heading span{
+    color: var(--primary);
+}
 
 
 
 
 
 
-
+/* Google fonts */
 @font-face {
     font-family: 'poppins-regular';
     src: url(/Material/Fonts/Poppins-Regular.ttf);
@@ -152,3 +189,158 @@ header .card .card-img-overlay p{
     font-family: 'poppins-regular';
 }
 /* Header and navigation bar styling end */
+
+
+
+
+
+/* About us styling start */
+.about-us figure{
+    box-shadow: -52px -50px 0px 0px var(--primary);
+}
+.about-us .last-figure{
+    box-shadow: 52px -50px 0px 0px var(--primary);
+}
+.about-us figure img{
+    background-color: rgb(209, 204, 204);
+    padding: 2rem 4rem;
+}
+.about-us .container .row .card-text{
+    line-height: 32px;
+    font-family: 'poppins-regular';
+}
+/* About us styling end */
+
+
+
+
+
+/* Our-clients styling start */
+.our-clients .container-fluid .container .row h4{
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'poppins-bold';
+}
+.our-clients .container-fluid .container .row span{
+    color: var(--ternary);
+    font-size: 12px;
+}
+/* Our-clients styling end */
+
+
+
+/* Project styling start */
+
+.counter{
+    color: #fff;
+    background: linear-gradient(to right bottom, #FFD81B, #f9b12a);
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    padding: 40px 20px 20px;
+    margin: 0 auto;
+    border-radius: 10px 10px 100px 100px;
+    box-shadow: 0 0 15px -5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.counter:after{
+    content: '';
+    background-color: #f9b12a;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.counter .counter-value{
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 40px;
+    margin: 0 0 15px;
+    display: block;
+}
+.counter h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+}
+.counter.green{ background: linear-gradient(to right bottom, #a9dd23, #52C242); }
+.counter.green:after{ background: #52C242; }
+.counter.cgreen{ background: linear-gradient(to right bottom, #01AD9F, #008888); }
+.counter.cgreen:after{ background: #008888; }
+.counter.blue{ background: linear-gradient(to right bottom, #00C5EF, #0092f4); }
+.counter.blue:after{ background: #0092f4; }
+/* Project styling end */
+
+
+
+
+/* Footer styling start */
+footer .container .row p{
+    font-family: 'poppins-regular';
+    line-height: 29px;
+}
+footer .container .row form .form-control{
+    background-color: var(--form-color);
+    outline: none;
+    border: 0px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    box-shadow: none;
+    color: var(--secondary);
+    font-family: 'poppins-regular';
+    font-size: 14px;
+    font-weight: 200;
+    padding: 1.2rem 19px;
+}
+footer .container .row form textarea{
+    height: 12rem !important;
+}
+footer .container .row .links a{
+    color: var(--secondary);
+    font-family: 'poppins-regular';
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+footer .container .row .links a:hover{
+    color: var(--ternary);
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+footer .container .row .icons a i{
+    font-size: 1.4rem;
+    color: var(--primary);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+footer .container .row .icons a:first-child i:hover{
+    color: #316FF6;
+}
+footer .container .row .icons a:nth-last-child(2) i:hover{
+    color: #34A853;
+}
+footer .container .row .icons a:last-child i:hover{
+    color: #26a7de;
+}
+/* Footer styling end */
