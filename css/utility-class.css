@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins-medium';
+}
+/* Colors */
+:root{
+    --primary: #DB1960;
+    --secondary: #F9F1E5;
+    --ternary: #726c6c;
+    --footer-color: #1d1818;
+    --form-color: #2b2525;
+    --client-back-color: #f3f0f0;
+}
+
+
+
+.linka{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-family: 'poppins-regular';
+    border: 1px solid var(--primary);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.linka:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.sec-heading{
+    text-transform: capitalize;
+    font-size: 43px;
+    font-weight: 800;
+    text-transform: lowercase;
+    line-height: 55px;
+}
+.sec-heading span{
+    color: var(--primary);
+}
+
+
+
+
+
+
+/* Google fonts */
+@font-face {
+    font-family: 'poppins-regular';
+    src: url(/Material/Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(/Material/Fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(/Material/Fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(/Material/Fonts/Poppins-SemiBold.ttf);
+}
+
+
+
+
+.section-margin-top{
+    margin-top: 10rem;
+}
+
+
+
+.background-primary{
+    background-color: var(--primary);
+}
+.background-footer-color{
+    background-color: var(--footer-color);
+}
+.background-client-back-color{
+    background-color: var(--client-back-color);
+}
+.color-primary{
+    color: var(--primary);
+}
+.color-secondary{
+    color: var(--secondary);
+}
+.color-ternary{
+    color: var(--ternary);
+}
+.padding-right-2{
+    padding-right: 2rem;
+}
+.font-weight-800{
+    font-weight: 800;
+}
+.margin-top-9{
+    margin-top: 9rem;
+}
+.margin-top-4{
+    margin-top: 4.3rem;
+}
+.padding-top-6{
+    padding-top: 6rem;
+}
+p{
+    color: var(--ternary);
+}
